@@ -7,7 +7,7 @@ echo -e "\n\nNOW ENTER YOUR HEROKU PASSWORD"
 # - devcenter.heroku.com/articles/config-vars
 # - devcenter.heroku.com/articles/heroku-postgresql
 heroku login
-heroku create
+heroku apps:create pnow
 ssh-keygen -t rsa
 heroku keys:add
 heroku addons:add heroku-postgresql:dev
